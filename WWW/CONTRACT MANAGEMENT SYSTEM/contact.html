@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>LU contract Management System</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="page">
+	<div id="heading">
+			<div id="topnav" style="text-align:center">
+				<img src="images/lulogo.png" alt="Image" />
+			</div>
+		</div>
+		<div id="header">
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				
+				<li>
+					<a href="">Official Panel</a>
+					<ul>
+						<li>
+							<a href="stafflogin.php">Official Staffs</a>
+						</li>
+						
+						<li>
+							<a href="adminlogin.php">Admin panel</a>
+						</li>
+						<li>
+							<a href="financelogin.php">Finance Officer panel</a>
+						</li>
+					
+					</ul>
+			  </li>
+				<li>
+					<a href="policy.html">Policy</a>
+				</li>
+				<li>
+					<a href="help.html">Help</a>
+				</li>
+				<li>
+					<a href="news.php">News</a>
+					<ul>
+						<li>
+							<a href="article.php">Article</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="contact.html">Contact Us</a>
+				</li>
+				<li>
+					<a href="viewdoc.php">E-Documents</a>
+				</li>
+				</li>
+			</ul>
+		</div>
+		<div id="body">
+			<div id="content" style="height: 400px; overflow: auto;">
+				<h1>Contact</h1>
+				<form action="">
+					<p>Fill the Details below to send us the comments or complaints. Our Admin will get in touch with you soon.</p>
+					<label for="name"><span>Name:</span><span>
+						<input type="text" id="name">
+						</span></label>
+					<label for="address"><span>Address:</span><span>
+						<input type="text" id="address" name="email">
+						</span></label>
+					<label for="telephone"><span>Telephone Number:</span><span>
+						<input type="text" id="telephone">
+						</span></label>
+					<label for="subject"><span>Subject:</span><span>
+						<input type="text" id="subject">
+						</span></label>
+					<label for="message"><span>Message:</span><span class="message">
+						<textarea name="message" id="message" cols="30" rows="10"></textarea>
+						</span></label>
+					<input type="submit" id="send" value="Send">
+				</form>
+			</div>
+		</div>
+		<div id="footer">
+		<div style="text-align:center">
+				<blockquote>
+				<blockquote>
+				<blockquote>
+				<blockquote>
+				<blockquote>
+				<blockquote>
+				<div>
+					<h1>LU Procurement Department</h1>
+					<ul>
+						<li>
+							Nyahururu
+						</li>
+						<li>
+							P.O BOX: 21666-1002
+						</li>
+						<li>TEL: +254 20 2454675</li>
+						
+						<li>
+							WEBSITE: www.lucontract.ac.ke
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h1>Quick Navigation</h1>
+					<ul>
+						<li>
+							<a href="index.html">*Home</a>
+						</li>
+						<li>
+							<a href="about.html">*About Us</a>
+						</li>
+						<li>
+							<a href="adminpanel.html">*Admin Panel</a>
+						</li>
+						<li>
+							<a href="policy.html">*Policy</a>
+						</li>
+						<li>
+							<a href="doc.html">*E-Documents</a>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h1>Connect</h1>
+					<a href="http://www.freewebsitetemplates.com/misc/contact" target="_blank" id="mail">Email us</a>
+					<a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" id="facebook">Facebook</a>
+					<a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" id="twitter">Twitter</a>
+					<a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" id="googleplus">Google&#43;</a>
+				</div>
+				</blockquote>
+				</blockquote>
+				</blockquote>
+				</blockquote>
+				</blockquote>
+				</blockquote>
+			</div>
+			<p>
+				Laikipia University Online Contracting Management System &copy; 2016:: Designed by john  | All Rights Reserved
+			</p>
+		</div>
+	</div>
+</body>
+</html>
+<?php
+
+//require 'class.phpmailer.php' ;
+require 'class.smtp.php' ;
+require 'PHPMailerAutoload.php' ;
+$Email = $_POST['email'];
+$mail = new PHPMailer();
+$mail->IsSMTP();
+$mail->Mailer = 'smtp' ;
+$mail->SMTPAuth = true;
+$mail->Host = 'smtp.gmail.com' ; // "ssl://smtp.gmail.com" didn't worked
+$mail->Port = 465 ;
+$mail->SMTPSecure = 'ssl' ;
+// or try these settings (worked on XAMPP and WAMP):
+$mail->Port = 587;
+$mail->SMTPSecure = 'tls';
+
+
+$mail->Username = "mainajohn291@gmail.com" ;
+$mail->Password = "Tieching11" ;
+$mail->IsHTML( true); // if you are going to send HTML formatted emails
+$mail->SingleTo = true; // if you want to send a same email to multiple users. multiple emails will be sent one-by-one.
+
+$mail->From = "mainajohn291@gmail.com" ;
+$mail->FromName = "LU CONTRACT MANAGEMENT" ;
+$mail->addAddress ( "$Email" ,"Laikipia" );
+//$mail->addAddress ( "user.2@gmail.com" ,"User 2" );
+//$mail->addCC ( "user.3@ymail.com" ,"User 3" );
+//$mail->addBCC( "user.4@in.com" , "User 4" );
+$mail->Subject = "Contractor Request " ;
+$mail->Body = "Hi,Contractor we are glad for your request. Than you for using our site." ;
+if(!$mail->Send())
+echo "Message was not sent <br/>PHPMailer Error: " . $mail->ErrorInfo;
+else
+echo "Message has been sent" ;
+?>

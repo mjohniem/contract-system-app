@@ -1,0 +1,74 @@
+/** resets **/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	outline: none;
+
+
+
+
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: medium none #000000;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 100;
+	font-family: inherit;
+}
+html { height: 101%; }
+
+
+#employees {
+  display: block;
+  width: 100%;
+  margin: 2px;
+  color: #fff;
+  border-color:#dhde;
+  border:block;
+  float:left;
+  }
+
+
+#leftnav {
+	padding: 0px 40px;
+	width:100px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+	margin-left:40px;
+	/*background-color: #fff;*/
+	border: 2px #B0F9F7 solid;
+	font-size:16px;
+}
+
+
+#w {
+  display: block;
+ width:380px;
+  margin: 0px 5px;
+  color: #fff;
+  border-color:#dhde;
+  border:block;
+  float:left;
+  	height:265px;
+  }
+
+
+#content {
+  display: block;
+  width: 380px;
+  border: 2px #B0F9F7 solid;
+  	height:265px;
+  background: #fff;
+  padding: 10px 10px;
+  padding-bottom: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}

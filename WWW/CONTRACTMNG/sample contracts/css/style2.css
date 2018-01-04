@@ -1,0 +1,211 @@
+/* @override http://www.printablecontracts.com/style.css */
+
+body {
+	margin: 0;
+	/*font-size: .9em; */
+	font-size:12px;
+	line-height: 1.2em;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #000000;
+	text-align: center;
+	display: table-column;
+	border: medium none #000000;
+    /*text-align: center; */
+	}
+
+#nav p {
+	font-size: 18px;
+	font-family: "Times New Roman", Times, serif;
+	margin-bottom: 4px;
+	overflow: scroll;
+	z-index: auto;
+	height: auto;
+	width: 900px;
+	left: auto;
+	top: auto;
+	right: auto;
+	bottom: auto;
+	clip: rect(auto,auto,auto,auto);
+	border: thin none #F0F0F0;
+	}
+
+#nav h2 { 
+	margin: 16px 0 8px 0; 
+	font-family: Verdana; 
+	font-size: 10px; 
+	font-weight: bold; 
+	}
+
+#nav a:link { 
+	color: #0066cc; 
+	text-decoration: none;
+	}
+
+#nav a:visited { 
+	color: #000099; 
+	text-decoration: none; 
+	}
+
+#nav a:hover { 
+	color: #0066cc; 
+	text-decoration: underline; 
+	}
+
+#nav a:active { 
+	color: #0066cc; 
+	text-decoration: none; 
+	}
+
+h1 {
+	margin: 6px 0 6px 0; 
+	font-family: Helvetica, Arial, sans-serif; 
+	font-size: 1.4em; 
+	}
+
+h2 {
+	margin: 6px 0 6px 0; 
+	font-family: Helvetica, Arial, sans-serif; 
+	font-size: 1.2em; 
+	}
+
+p, .intlist {
+	margin-top:0px;
+	font-size: 16px;
+	line-height: 1.2em;
+	font-family: Helvetica, Arial, sans-serif;
+	height: auto;
+	width: 800px;
+	border: medium none #333333;
+	}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+/* Safari 3.0 and Opera 9 rules here */
+.searchpositioning{position:absolute;bottom:-1.3em;padding-left:2em;}
+}
+
+#logo-header { 
+	position:relative;
+	margin: 0 10% 0 6%;
+	width: 84%;
+	padding: 18px;
+	background: #fff;
+	top: 10px; 
+	left: 0; 
+	z-index: 1;
+	}
+
+#logo-header-small { 
+	position:relative;
+	margin: 0 10% 0 6%;
+	width: 84%;
+	padding: 18px;
+	background: #fff;
+	top: 10px; 
+	left: 0; 
+	z-index: 1;
+	}
+
+#logo-header form {
+	position: relative;
+	top: -10px;
+	font-size: larger;
+	float: right;
+}
+
+#homepage-content {
+	top:0;
+	margin: 0 auto 0 6%;
+	position: relative;
+	z-index: 0;
+	width: 84%;
+	padding: 18px;
+	background: #fff;
+	text-align: left;
+	overflow: scroll;
+	}
+	
+#download {
+	font-style:italic;
+	border:1px solid #999;
+	padding:5px;
+	background-color:#fdd;
+	font-size:80%;
+	margin: 0 350px 0 30px;
+}
+
+#subscribe {
+	font-style:italic;
+	border:1px solid #999;
+	padding:5px;
+	background-color:#6495ED;
+	font-size:110%;
+	margin: 0 10% 10px 10%;
+}
+
+#main-content { 
+	position: relative; 
+	z-index: 0;
+	top: 129px;
+	width: 84%;
+	margin: 0 10% 129px 6%;
+	padding: 18px;
+	background: #fff;
+	border: #999 1px solid;
+	text-align: left;
+	}
+
+.links { 
+	text-align: left;
+	}
+
+#search-form, #footer {
+	width: 800px;
+	text-align: center;
+	height: 200px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	border: medium double #999;
+	color: #000000;
+	padding: 3px;
+	}
+	
+#footer {
+	font-size: .8em;
+	
+	}
+
+#search-form form {
+	font-size: .9em;
+	}
+	
+#search-form form img {
+	vertical-align: -50%;}
+	
+#ad{
+float: right;
+margin-right: 2em;
+margin-top: 0.5em;
+}
+
+
+.disclaimer { 
+	top:0;
+	margin: 0 auto 0 6%;
+	position: relative; 
+	z-index: 0;
+	width: 84%;
+	padding: 1px;
+	background: #fff;
+	text-align: left;
+	font-size: 10px;
+	}
+	
+.dpfad
+{
+float: right;
+margin-right: 2em;
+margin-top: 0.5em;
+
+}

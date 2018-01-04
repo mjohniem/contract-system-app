@@ -1,0 +1,4 @@
+if($_GET["userlogin"]&& $_GET["userid"] && $_GET["regemail"] && $_GET["password"] && $_GET["regpass2"])
+		{
+			if($_GET["password"]==$_GET["regpass2"])
+				{
